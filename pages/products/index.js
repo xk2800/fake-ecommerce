@@ -13,7 +13,6 @@ export default function Products({ products }) {
                     <div className="border px-[20px] py-[10px] rounded-[10px]">
                         <Link href={'products/' + prods.id} key={prods.id}>
                             <a>
-
                                 <Image src={prods.image}
                                     alt={prods.title}
                                     width={150}

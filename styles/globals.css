@@ -4,3 +4,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#buttons {
+    @apply border-[color:var(--myblack)] border-[1.5px] py-[8px]
+}
+
+:root{
+    --mygray: #e4ddf4;
+    --mybrown: #943d24;
+    --myoffwhite: #fffbf0;
+    --mydarkblue: #2d2d2d;
+    --myblack: #282612;
+}

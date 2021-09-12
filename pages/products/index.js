@@ -8,11 +8,12 @@ export default function Products({ products }) {
     return (
         <div>
             <h2 className="font-main">All Products Available</h2>
-            <div className="grid grid-cols-4 gap-[10px] font-secondary">
+            <div className="grid grid-cols-4 gap-[15px] font-secondary">
                 {products.map(prods => (
-                    <div className="border px-[20px] py-[10px] rounded-[10px]">
-                        <Link href={'products/' + prods.id} key={prods.id}>
-                            <a>
+
+                    <Link href={'products/' + prods.id} key={prods.id}>
+                        <a>
+                            <div className="border px-[20px] py-[10px] rounded-[10px] bg-white hover:shadow-2xl hover:border-gray-200 hover:border-[1.5px]">
                                 <div className="text-center">
                                     <Image src={prods.image}
                                         alt={prods.title}
@@ -23,10 +24,10 @@ export default function Products({ products }) {
                                     <p className="line-clamp-1 hover:line-clamp-3">{prods.title}</p>
                                     RM{prods.price}
                                 </div>
+                            </div>
+                        </a>
+                    </Link>
 
-                            </a>
-                        </Link>
-                    </div>
                 ))}
             </div>
         </div >

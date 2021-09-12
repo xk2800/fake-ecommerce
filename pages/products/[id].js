@@ -32,7 +32,6 @@ export const getStaticProps = async (context) => {
 export default function Details({ products }) {
     return (
         <div>
-            test
             <p>{products.title}</p>
         </div>
     );
